@@ -3,8 +3,8 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import Toplevel
 
-euro =  1.32
-dollars = 1.13
+euro =  1.13
+dollars = 1.317
 
 currencies = ['Euros','Dollars']
 
