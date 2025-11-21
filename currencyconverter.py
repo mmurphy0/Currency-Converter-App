@@ -3,18 +3,27 @@ import tkinter as tk
 from tkinter import messagebox
 from tkinter import Toplevel
 
-euro =  1.13
-dollars = 1.317
+euro =  1.14
+US_dollars = 1.317
+AU_dollars = 2.03
+Swiss_Franc = 1.06
+Japanese_Yen = 204.86
 
-currencies = ['Euros','Dollars']
+currencies = ['Euro', 'US Dollar', 'United States Dollar', 'AU Dollar', 'Australian Dollar', 'Swiss Franc', 'Japanese Yen']
 
 def convert():
     amount = float(root2_entry.get())
-    
-    if currency == 'Euros':
+  
+    if currency == 'Euro':
         result = (euro * amount)
-    elif currency == 'Dollars':
-        result = (dollars * amount)
+    elif currency == 'United States Dollar' or 'US Dollar':
+        result = (US_dollars * amount)
+    elif currency == 'Australian Dollar' or 'AU Dollar':
+        result = (AU_dollars * amount)
+    elif currency == 'Swiss Franc':
+        result = (Swiss_Franc * amount)
+    elif currency == 'Japanese Yen':
+        result = (Japanese_Yen * amount)
 
     converted = Toplevel()
     converted.geometry('215x100')
@@ -87,7 +96,6 @@ def convert():
 def checkcurrency():
     global currency
     currency = root_entry.get()
-
 
     if currency in currencies:
         convert()
