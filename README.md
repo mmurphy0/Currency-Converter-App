@@ -25,7 +25,8 @@ A Python Tkinter App which lets people convert pounds (£) to any of the avaliab
 
 ## Installation
 git clone (repo)
-cd (repo0
+
+cd (repo)
 
 ### Windows
 python currencyconverter.py
