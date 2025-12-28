@@ -26,9 +26,8 @@ def convert():
         result = (Japanese_Yen * amount)
 
     converted = Toplevel()
-    converted.geometry('215x100')
-    converted.minsize(215,100)
-    converted.maxsize(215,108)
+    converted.geometry('215x100+0+0')
+    converted.resizable(False,False)
 
     converted_title = tk.Label(
         converted,
@@ -104,9 +103,8 @@ def checkcurrency():
 
 root = tk.Tk()
 root.title('Currency Converter')
-root.geometry('270x140')
-root.minsize(270,140)
-root.maxsize(270,140)
+root.geometry('270x140+0+0')
+root.resizable(False,False)
 
 root_title = tk.Label(
     root,
