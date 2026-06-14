@@ -1,27 +1,31 @@
 # Currency Converter
 
-## Exchange rates are accurate to the date of the commit
-
 ## Description
 A Python Tkinter App which lets people convert pounds (£) to any of the avaliable currencies as listed below:
 
--> Euro
+- Euro
 
--> United States Dollar
+- United States Dollar
 
--> Australian Dollar
+This project uses the Frankfurter API for live exchange rates:
 
--> Swiss Franc
+https://api.frankfurter.app
 
--> Japanese Yen
+No API key is required.
 
 ## Usage
 
--> The user is greeted with the main window which lets the user enter which currency they want to convert to and how much money they want to convert. Below the entry boxes are buttons to convert the currency from pounds to the desired currency and an exit button if the user wants to exit the program
+- The welcome window is displayed with the app title and start button.
 
--> If the currency entered is not supported, the user will be informed of this via a messagebox saying 'Unfortunately, this currency is not supported'
+- The user is presented the currencies they can convert to from GBP.
 
--> If the checks are successful then another window will open showing the user how much the converted amount is
+- The user is prompted to enter in how much they would like to convert. You will be prompted to retry if you have not entered a valid number.
+
+- The program gets the conversion rate from the Frankfurter API, if the API is unavaliable, The user is informed about the issue and returned to the welcome window.
+
+- The amount in the original amount and currency is shown compared to the converted amount and currency.
+
+- The User must click the continue button to be returned to the welcome window.
 
 ## Installation
 git clone (repo)
@@ -35,13 +39,13 @@ python currencyconverter.py
 python3 currencyconverter.py
 
 ## Tech Stack
--> Python
+- Python 3
 
--> Tkinter
+- Tkinter (GUI)
+
+- Requests (HTTP client)
+
+- Frankfurter API (exchange rates)
 
 ## Future Updates
--> Currencies updated regularly
-
--> Add more currencies to be supported
-
--> Make the program more robust
+-> More supported currencies.
