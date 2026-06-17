@@ -55,8 +55,11 @@ def get_values(from_cur, to_cur):
         conversion_amount = get_values_entry.get()
         try:
             amount = float(conversion_amount)
+            if amount <= 0:
+                messagebox.showinfo('Error','Please enter a positive number.')
+                return
         except ValueError:
-            messagebox.showerror('Error', 'Please enter a valid number')
+            messagebox.showerror('Error', 'Please enter a valid number.')
             return
         
         get_values_win.destroy()
