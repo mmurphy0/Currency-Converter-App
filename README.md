@@ -48,4 +48,4 @@ python3 currencyconverter.py
 - Frankfurter API (exchange rates)
 
 ## Future Updates
-- More supported currencies.
+- More supported currencies will be added frequently
