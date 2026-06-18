@@ -28,14 +28,28 @@ No API key is required.
 - The User must click the continue button to be returned to the welcome window.
 
 ## Installation
-git clone (repo)
+To run this application locally, ensure you have Python installed on your machine along with the required `requests` library.
 
-cd (repo)
+### Clone the repository:**
+   ```bash
+   git clone 
+   ```
 
-### Windows
+### Navigate into the project directory:**
+   ```bash
+   cd Currency-Converter-App
+   ```
+
+### Install the required API dependency:**
+   ```bash
+   pip install requests
+   ```
+
+### Launch the application:**
+#### Windows
 python currencyconverter.py
 
-### MacOS & Linux
+#### MacOS & Linux
 python3 currencyconverter.py
 
 ## Tech Stack
