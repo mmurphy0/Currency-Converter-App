@@ -6,7 +6,9 @@ import requests
 
 currency_codes = {
     'Euro': 'EUR',
-    'United States Dollar': 'USD'
+    'United States Dollar': 'USD',
+    'Japanese Yen':'JPY',
+    'Canadian Dollar':'CAD'
 }
 
 def convert_amount(conversion_amount, from_cur, to_cur):
@@ -26,7 +28,7 @@ def convert_amount(conversion_amount, from_cur, to_cur):
 
     rate = data['rates'][to_cur]
 
-    result = float(conversion_amount) * rate
+    result = round((float(conversion_amount) * rate),2)
 
     conversion_results_win = Toplevel()
     conversion_results_win.title('Currency Converter')
@@ -131,6 +133,24 @@ def choose_currency():
         command=lambda: set_currencies('GBP','USD')
     )
     GBP_USD_Button.pack()
+
+    GBP_JPY_Button = tk.Button(
+        choose_currency_win,
+        text='GBP 🏴󠁧󠁢󠁥󠁮󠁧󠁿 -> JPY 🇯🇵',
+        font=('Arial'),
+        width=20,
+        command=lambda: set_currencies('GBP','JPY')
+    )
+    GBP_JPY_Button.pack()
+
+    GBP_CAD_Button = tk.Button(
+        choose_currency_win,
+        text='GBP 🏴󠁧󠁢󠁥󠁮󠁧󠁿 -> CAD 🇨🇦',
+        font=('Arial'),
+        width=20,
+        command=lambda: set_currencies('GBP','CAD')
+    )
+    GBP_CAD_Button.pack()
 
 root = tk.Tk()
 root.title('Currency Converter')
