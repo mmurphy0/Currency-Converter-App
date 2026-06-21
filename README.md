@@ -62,4 +62,19 @@ python3 currencyconverter.py
 - Frankfurter API (exchange rates)
 
 ## Future Updates
-- More supported currencies will be added frequently
+- More supported currencies
+   - JPY - Japanese Yen
+   
+   - CAD - Canadian Dollar
+     
+   - AUD - Australian Dollar
+ 
+   - CHF - Swiss Franc
+ 
+   - CNY - Chinese Yuan
+ 
+   - INR - Indian Rupee
+ 
+   - AED - UAE Dirham
+ 
+   - NZD - New Zealand Dollar
