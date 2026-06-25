@@ -8,7 +8,8 @@ currency_codes = {
     'Euro': 'EUR',
     'United States Dollar': 'USD',
     'Japanese Yen':'JPY',
-    'Canadian Dollar':'CAD'
+    'Canadian Dollar':'CAD',
+    'Australian Dollar':'AUD'
 }
 
 def convert_amount(conversion_amount, from_cur, to_cur):
@@ -151,6 +152,15 @@ def choose_currency():
         command=lambda: set_currencies('GBP','CAD')
     )
     GBP_CAD_Button.pack()
+
+    GBP_AUD_Button = tk.Button(
+        choose_currency_win,
+        text='GBP 🏴󠁧󠁢󠁥󠁮󠁧󠁿 -> AUD 🇦🇺',
+        font=('Arial'),
+        width=20,
+        command=lambda: set_currencies('GBP','AUD')
+    )
+    GBP_AUD_Button.pack()
 
 root = tk.Tk()
 root.title('Currency Converter')

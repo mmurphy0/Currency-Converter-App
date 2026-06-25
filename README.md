@@ -11,6 +11,8 @@ A Python Tkinter App which lets people convert pounds (£) to any of the avaliab
 
 - Canadian Dollar (CAD)
 
+- Australian Dollar (AUD)
+
 This project uses the Frankfurter API for live exchange rates:
 
 https://api.frankfurter.app
@@ -67,8 +69,6 @@ python3 currencyconverter.py
 
 ## Future Updates
 - More supported currencies     
-   - AUD - Australian Dollar
- 
    - CHF - Swiss Franc
  
    - CNY - Chinese Yuan
