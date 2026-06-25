@@ -3,9 +3,13 @@
 ## Description
 A Python Tkinter App which lets people convert pounds (£) to any of the avaliable currencies as listed below:
 
-- Euro
+- Euro (EUR)
 
-- United States Dollar
+- United States Dollar (USD)
+
+- Japanese Yen (JPY)
+
+- Canadian Dollar (CAD)
 
 This project uses the Frankfurter API for live exchange rates:
 
@@ -62,11 +66,7 @@ python3 currencyconverter.py
 - Frankfurter API (exchange rates)
 
 ## Future Updates
-- More supported currencies
-   - JPY - Japanese Yen
-   
-   - CAD - Canadian Dollar
-     
+- More supported currencies     
    - AUD - Australian Dollar
  
    - CHF - Swiss Franc
